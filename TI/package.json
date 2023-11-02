@@ -1,0 +1,47 @@
+{
+    "name": "node-red-docker",
+    "version": "3.0.2",
+    "description": "Low-code programming for event-driven applications",
+    "homepage": "http://nodered.org",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/node-red/node-red-docker.git"
+    },
+    "private": true,
+    "scripts": {
+        "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
+        "debug": "node --inspect=0.0.0.0:9229 $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
+        "debug_brk": "node --inspect=0.0.0.0:9229 --inspect-brk $NODE_OPTIONS node_modules/node-red/red.js $FLOWS"
+    },
+    "contributors": [
+        {
+            "name": "Dave Conway-Jones"
+        },
+        {
+            "name": "Nick O'Leary"
+        },
+        {
+            "name": "James Thomas"
+        },
+        {
+            "name": "Raymond Mouthaan"
+        }
+    ],
+    "dependencies": {
+        "node-red": "3.0.2",
+        "node-red-contrib-fs": "~1.4.1",
+        "node-red-contrib-fs-ops": "~1.6.0",
+        "node-red-contrib-image-output": "~0.6.3",
+        "node-red-contrib-image-tools": "~2.0.4",
+        "node-red-contrib-tableify": "~0.0.2",
+        "node-red-contrib-ui-media": "~1.2.0",
+        "node-red-contrib-webcam": "~0.0.1",
+        "node-red-dashboard": "~3.5.0",
+        "node-red-node-ui-table": "~0.4.3",
+        "node-red-node-ui-webcam": "~0.4.0"
+    },
+    "engines": {
+        "node": ">=12"
+    }
+}
